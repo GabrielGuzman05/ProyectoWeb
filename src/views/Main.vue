@@ -6,13 +6,16 @@
         <v-layout wrap mt-8 justify-center>
           <v-flex sm10>
             <v-carousel>
-              <v-carousel-item v-for="(color, i) in colors" :key="color">
-                <v-sheet :color="color" height="100%" tile>
-                  <v-row class="fill-height" align="center" justify="center">
-                    <div class="display-3">Slide {{ i + 1 }}</div>
-                  </v-row>
-                </v-sheet>
-              </v-carousel-item>
+              <!--
+                Toma las rutas de todas las imagenes y las agrega al carrusel.
+              !-->
+              <v-carousel-item
+                v-for="(item,i) in carousel_img"
+                :key="i"
+                :src="item"
+                reverse-transition="fade-transition"
+                transition="fade-transition"
+              ></v-carousel-item>
             </v-carousel>
           </v-flex>
         </v-layout>
@@ -38,7 +41,13 @@ export default {
   components: { Navbar },
   data() {
     return {
-      colors: ["primary", "secondary", "yellow darken-2", "red", "orange"]
+      carousel_img: [
+        "imgs/carousel-1.jpg",
+        "imgs/carousel-2.jpg",
+        "imgs/carousel-3.jpg",
+        "imgs/carousel-4.webp",
+        "imgs/carousel-5.jpg"
+      ]
     };
   }
 };
