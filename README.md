@@ -1,4 +1,4 @@
-# example
+# d6
 
 ## Project setup
 ```
