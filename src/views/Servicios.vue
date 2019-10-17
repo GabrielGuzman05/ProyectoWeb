@@ -1,75 +1,63 @@
 <template>
   <section>
     <Navbar />
-    <v-container>
-      <v-layout md12>
-        <v-text-field v-model="search" append-icon="mdi-search" placeholder="Buscar" single-line />
-      </v-layout>
-      <v-layout v-if="countriesFilter && countriesFilter.length" wrap md12>
-        <v-flex
-          v-for="(country, index) in countriesFilter"
-          :key="index"
-          class="mb-5"
-          min-width="300px"
-          :search="search"
-          md3
-          sm4
-          xs12
-          px-2
-        >
-          <v-card>
-            <v-img class="white--text" height="180px" v-bind:src="country.flag">
-              <v-card-title>{{ country.name }}</v-card-title>
-            </v-img>
-            <v-card-text>
-              <div class="subtitle-1">Continente: {{ country.region }}</div>
-              <div class="subtitle-1">Capital: {{ country.capital }}</div>
-              <div class="subtitle-1">Población: {{ populationFormat(country.population) }}</div>
-            </v-card-text>
-          </v-card>
-        </v-flex>
-      </v-layout>
-    </v-container>
+    <v-layout wrap ma-6 justify-center>
+      <v-flex v-for="(pais, index) in paises" v-bind:key="index" sm3 xs12 px-2 mb-5>
+        <v-card class="mx-auto">
+          <v-img class="white--text" height="auto" v-bind:src="pais.flag" />
+          <v-card-title>{{ pais.name }}</v-card-title>
+          <v-card-text>
+            <div class="subtitle-1">Capital: {{ pais.capital }}</div>
+            <div class="subtitle-1">Precio: ${{ pais.population }}</div>
+          </v-card-text>
+          <v-card-actions>
+            <v-spacer />
+            <v-btn outlined>Comprar</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+    </v-layout>
   </section>
 </template>
 <script>
-import axios from "axios";
 import Navbar from "../components/Navbar.vue";
-import { Script } from "vm";
 export default {
-  components: {
-    Navbar
-  },
-  data() {
-    return {
-      countries: [],
-      search: ""
-    };
-  },
-  created() {
-    this.getCountries();
-  },
+  components: { Navbar },
+  data: () => ({
+    dialog: false,
+    dialog2: false,
+    dialog3: false,
+    headers: [
+      {
+        text: "Pais",
+        align: "left",
+        sortable: false,
+        value: "name"
+      }
+    ]
+  }),
   computed: {
-    countriesFilter() {
-      return this.countries.filter(e => {
-        return e.name.toLowerCase().indexOf(this.search.toLowerCase()) !== -1;
+    // Getters
+    paises() {
+      return this.$store.state.paises;
+    }
+  },
+  watch: {
+    // Watch creado con el objetivo de que cada país tengo un like asociado
+    paises: function() {
+      this.paises.forEach(element => {
+        pais => {
+          //this.$store.commit("defaultLikes");
+        };
       });
     }
   },
+  created() {
+    // Se crea un action con el objetivo de obtener los países
+    //(Consumir la API)
+    this.$store.dispatch("getAllCountries");
+  },
   methods: {
-    getCountries() {
-      axios
-        .get("https://restcountries.eu/rest/v2/all")
-        .then(response => {
-          this.countries = response.data;
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
-    },
-    populationFormat(population) {
-      return population.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-    }
   }
 };
 </script>
