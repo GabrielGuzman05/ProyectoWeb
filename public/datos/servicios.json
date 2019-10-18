@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Corte Mujer",
+        "imagen": "/imgs/servicios/01.png",
+        "precio": "8750",
+        "descripcion": "Corte de Mujer a un valor promocional espectacular. Descubre el mejor estilo para tu tipo de cabello. Válido para cualquier largo de cabello. Promoción válida hasta el 31 de Octubre de 2019 o hasta agotar oferta solo en salones adheridos. Servicio puede ser usado hasta el 31 de Octubre de 2019."
+    },
+    {
+        "name": "Tratamiento Máscara Nashi Argan",
+        "imagen": "/imgs/servicios/02.png",
+        "precio": "9990",
+        "descripcion": "Tratamiento Máscara Nashi Argan contiene los beneficios directos del Aceite de Argán, volviendo el cabello suave, luminoso y sedoso. Promoción válida para todo largo de cabello hasta el 31 de Octubre de 2019 o hasta agotar número de invitaciones disponibles. Servicio puede ser usado hasta el 31 de Octubre de 2019."
+    },
+    {
+        "name": "Alisado de Keratina",
+        "imagen": "/imgs/servicios/03.png",
+        "precio": "49900",
+        "descripcion": "Aprovecha esta oportunidad única de obtener ese alisado de keratina que tanto has deseado al mejor precio posible, solo en salones Palumbo por tiempo limitado. Válido para todo largo de cabello.  Promoción válida hasta el 31 de Octubre de 2019 hasta agotar oferta. Servicio puede ser usado hasta el 31 de Octubre de 2019."
+    },
+    {
+        "name": "Tratamiento 24 Kilates Kérastase",
+        "imagen": "/imgs/servicios/04.png",
+        "precio": "20790",
+        "descripcion": "Este servicio en salón mezcla de 4 aceites esenciales, refuerza la fibra, otorga nutrición, brillo y protección. Promoción válida hasta el 31 de Octubre de 2019 hasta agotar oferta. Servicio puede ser usado en cualquier salón Palumbo adherido hasta el 31 de Octubre de 2019."
+    },
+    {
+        "name": "Tratamiento Máscara Jenoris",
+        "imagen": "/imgs/servicios/05.png",
+        "precio": "9600",
+        "descripcion": "Tratamiento Máscara Jenoris contiene los beneficios directos del Aceite de Linaza, volviendo el cabello suave, luminoso y sedoso. Promoción válida para todo largo de cabello hasta el 31 de Octubre de 2019 o hasta agotar número de invitaciones disponibles. Servicio puede ser usado hasta el 31 de Octubre de 2019."
+    }
+]

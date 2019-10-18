@@ -27,13 +27,27 @@ const router = new Router({
                     path: '/personal',
                     name: 'Personal',
                     component: () => import('../views/Personal')
-                },
-                {
-                    path: '/admin',
-                    name: 'Admin',
-                    component: () => import('../views/admin/Home')
                 }
             ]
+        }, {
+            path: '/admin/',
+            component: () => import('../App'),
+            children: [
+                {
+                    path: '/',
+                    name: 'Admin',
+                    component: () => import('../views/admin/Home')
+                },
+                {
+                    path: 'productos',
+                    name: 'Productos',
+                    component: () => import('../views/admin/Productos')
+                },
+                {
+                    path: 'servicios',
+                    name: 'Servicios',
+                    component: () => import('../views/admin/Servicios')
+                }]
         },
         {
             path: '*',

@@ -1,3 +1,5 @@
 export default {
-    paises: []
+    servicios: [],
+    personal: [],
+    productos: []
 }

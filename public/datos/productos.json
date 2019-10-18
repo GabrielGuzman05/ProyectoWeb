@@ -1,0 +1,37 @@
+﻿[
+    {
+        "name": "Shampoo Bain Satin 1 250ml",
+        "imagen": "/imgs/productos/01.png",
+        "precio": "22500",
+        "marca": "KÉRASTASE",
+        "descripcion": "Bain Satin 1 es un baño de nutrición diseñado para cabello entre normal y ligeramente seco. Sus ingredientes activos proporcionan nutrientes clave para nutrir la fibra y suavizar el cabello desde las raíces hasta las puntas."
+    },
+    {
+        "name": "Acondicionador Lait Vital 200ml",
+        "imagen": "/imgs/productos/02.png",
+        "precio": "25500",
+        "marca": "KÉRASTASE",
+        "descripcion": "Lait Vital es un acondicionador nutritivo para pelo entre normal y ligeramente seco. Formulado con nutrientes activos y extracto Irisome, nutre y suaviza el cabello, y preserva la luminosidad."
+    },
+    {
+        "name": "Tratamiento Mask Masquintense Fino 200ml",
+        "imagen": "/imgs/productos/03.png",
+        "precio": "36000",
+        "marca": "KÉRASTASE",
+        "descripcion": "Masquintense cabello finos es un tratamiento de nutrición profunda para cabello fino y seco con necesidad de nutrición intensa. El cabello se nutre instantáneamente de forma duradera."
+    },
+    {
+        "name": "Tratamiento Mask Masquintense Grueso 200ml",
+        "imagen": "/imgs/productos/04.png",
+        "precio": "36000",
+        "marca": "KÉRASTASE",
+        "descripcion": "Masquintense cabello grueso es un rico tratamiento en mascarilla diseñado para cabello grueso y seco. Su alta concentración de ingredientes activos penetra la fibra capilar gruesa para una nutrición duradera."
+    },
+    {
+        "name": "Nectar-Termique 150ml",
+        "imagen": "/imgs/productos/05.png",
+        "precio": "26900",
+        "marca": "KÉRASTASE",
+        "descripcion": "Nectar-Termique es una crema de protección térmica para el cabello normal y seco. Protege el cabello seco de los daños del secador y el peinado con calor, dejando el pelo suave y más fácil de peinar."
+    }
+]

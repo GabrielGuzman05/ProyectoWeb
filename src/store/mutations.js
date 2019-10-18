@@ -1,5 +1,11 @@
 export default {
-    getPaises: (state, { paises }) => {
-        state.paises = paises
+    getServicios: (state, { servicios }) => {
+        state.servicios = servicios
+    },
+    getProductos: (state, { productos }) => {
+        state.productos = productos
+    },
+    getPersonal: (state, { personal }) => {
+        state.personal = personal
     }
 }

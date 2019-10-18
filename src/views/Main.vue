@@ -21,10 +21,13 @@
       <v-flex sm10>
         <v-card class="mx-auto">
           <v-card-text>
-            Peluquería Olga Ibarra es un salon de belleza
-            que presta una gran cantidad de servicios, ven y conócenos.
+            Peluquería Olga Ibarra fue fundada hace más de 30 años y es un referente de la moda 
+            y tendencias en el sector de la Peluquería. 
+            Nuestra orientación familiar y profesional, han sido pilares fundamentales para el 
+            logro de nuestro desarrollo.
           </v-card-text>
         </v-card>
+        <br>
       </v-flex>
     </v-layout>
   </section>
