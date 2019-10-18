@@ -3,7 +3,7 @@
     <Navbar />
     <v-layout wrap ma-6 justify-center>
       <v-flex v-for="(persona, index) in personal" v-bind:key="index" sm3 xs12 px-2 mb-5>
-        <v-card class="mx-auto">
+        <v-card class="mx-auto" height="100%">
           <v-img class="white--text" height="auto" v-bind:src="persona.imagen" />
           <v-card-title>{{ persona.name }} {{ persona.apellido }}</v-card-title>
           <v-card-text>

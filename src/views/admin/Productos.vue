@@ -32,11 +32,11 @@
           </td>
           <td>
             <span v-if="formActualizar && idActualizar == index">
-              <v-btn v-on:click.native="guardarActualizacion(index)"><v-icon>far fa-save</v-icon></v-btn>
+              <v-btn v-on:click.native="guardarActualizacion(index)"><v-icon color="green">far fa-save</v-icon></v-btn>
             </span>
             <span v-else>
-              <v-btn v-on:click.native="editItem(index)"><v-icon>fas fa-edit</v-icon></v-btn>
-              <v-btn v-on:click.native="delItem(index)"><v-icon>far fa-minus-square</v-icon></v-btn>
+              <v-btn v-on:click.native="editItem(index)"><v-icon color="blue">fas fa-edit</v-icon></v-btn>
+              <v-btn v-on:click.native="delItem(index)"><v-icon color="red">far fa-minus-square</v-icon></v-btn>
             </span>
           </td>
         </tr>

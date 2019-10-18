@@ -3,7 +3,7 @@
     <Navbar />
     <v-layout wrap ma-6 justify-center>
       <v-flex v-for="(serv, index) in servicios" v-bind:key="index" sm3 xs12 px-2 mb-5>
-        <v-card class="mx-auto">
+        <v-card class="mx-auto" height="100%">
           <v-img class="white--text" height="auto" v-bind:src="serv.imagen" />
           <v-card-title>{{ serv.name }}</v-card-title>
           <v-card-text>
