@@ -3,7 +3,7 @@
     <Navbar />
     <v-layout wrap mt-8 justify-center>
       <v-flex sm10>
-        <v-carousel height="auto">
+        <v-carousel height="auto" continuous cycle>
           <!--
                 Toma las rutas de todas las imagenes y las agrega al carrusel.
           !-->

@@ -1,6 +1,48 @@
 <template>
   <section>
     <Navbar />
+    <v-container>
+        <v-row justify="center">
+          <v-dialog v-model="dialog" persistent max-width="600px">
+            <template v-slot:activator="{ on }">
+              <v-btn color="primary" dark v-on="on">
+                <v-icon>far fa-plus-square</v-icon>
+              </v-btn>
+            </template>
+            <v-card>
+              <v-card-title>
+                <span class="headline">Nuevo Producto</span>
+              </v-card-title>
+              <v-card-text>
+                <v-container>
+                  <v-col cols="12">
+                    <v-text-field label="Nombre*" v-model="nombre" required></v-text-field>
+                  </v-col>
+                  <v-col cols="12">
+                    <v-text-field label="Marca*" v-model="marca" required></v-text-field>
+                  </v-col>
+                  <v-col cols="12">
+                    <v-text-field label="Descripción*" v-model="descripcion" required></v-text-field>
+                  </v-col>
+                  <v-col cols="12">
+                    <v-text-field label="Precio*" type="number" v-model="precio" required></v-text-field>
+                  </v-col>
+                  <v-col cols="12">
+                    <v-file-input label="Imagen*"></v-file-input>
+                  </v-col>
+                </v-container>
+                <small>*indica un campo requerido</small>
+              </v-card-text>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn color="blue darken-1" text @click="dialog = false">Cerrar</v-btn>
+                <v-btn color="blue darken-1" text @click="addItem()">Guardar</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
+        </v-row>
+      </v-container>
+      <v-container>
     <v-simple-table>
       <thead>
         <tr>
@@ -42,6 +84,7 @@
         </tr>
       </tbody>
     </v-simple-table>
+      </v-container>
   </section>
 </template>
 <script>
