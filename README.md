@@ -4,8 +4,8 @@
 DESARROLLO DE APLICACIONES PARA INTERNET-ICC619
 
 ## Integrantes
-Gabriel Guzmán
-Nicolás Parra
+#### Gabriel Guzmán
+#### Nicolás Parra
 
 ## Project setup
 ```
