@@ -12,7 +12,22 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer />
-            <v-btn outlined>Comprar</v-btn>
+            <v-dialog width="500">
+              <template v-slot:activator="{ on }">
+                <v-btn dark v-on="on">Más datos</v-btn>
+              </template>
+              <v-card>
+                <v-card-title class="headline grey lighten-2" primary-title>Detalles</v-card-title>
+                <v-divider></v-divider>
+                <v-card-text>
+                  <br>
+                  <p>Capital: {{ pais.capital }}</p>
+                  <p>Precio: ${{ pais.population }}</p>
+                  <p>Area: {{ pais.area }}</p>
+                </v-card-text>
+                <v-divider></v-divider>
+              </v-card>
+            </v-dialog>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -24,17 +39,7 @@ import Navbar from "../components/Navbar.vue";
 export default {
   components: { Navbar },
   data: () => ({
-    dialog: false,
-    dialog2: false,
-    dialog3: false,
-    headers: [
-      {
-        text: "Pais",
-        align: "left",
-        sortable: false,
-        value: "name"
-      }
-    ]
+
   }),
   computed: {
     // Getters
@@ -57,7 +62,6 @@ export default {
     //(Consumir la API)
     this.$store.dispatch("getAllCountries");
   },
-  methods: {
-  }
+  methods: {}
 };
 </script>
