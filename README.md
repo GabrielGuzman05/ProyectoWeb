@@ -1,4 +1,11 @@
-# d6
+# Proyecto Web
+
+## Asignatura
+DESARROLLO DE APLICACIONES PARA INTERNET-ICC619
+
+## Integrantes
+Gabriel Guzmán
+Nicolás Parra
 
 ## Project setup
 ```
