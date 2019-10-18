@@ -115,6 +115,7 @@ export default {
     this.$store.dispatch("getAllPersonal");
   },
   methods: {
+    //Se muestra el formulario de edición
     editItem(index) {
       this.idActualizar = index;
       this.nombreActualizar = this.personal[index].name;
@@ -131,6 +132,7 @@ export default {
       this.personal[index].apellido = this.apellidoActualizar;
       this.personal[index].rol = this.rolActualizar;
     },
+    //eliminamos el producto en la posición de index
     delItem(index) {
       this.personal.splice(index, 1);
     }

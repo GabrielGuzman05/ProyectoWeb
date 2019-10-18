@@ -1,4 +1,5 @@
 export default {
+    //se cargan los datos
     getServicios: (state, { servicios }) => {
         state.servicios = servicios
     },
@@ -8,6 +9,7 @@ export default {
     getPersonal: (state, { personal }) => {
         state.personal = personal
     },
+    //se agrega un producto
     addProducto: (state, { nombre, imagen, precio, marca, descripcion }) => {
         state.productos.push({
             name: nombre,
@@ -17,6 +19,7 @@ export default {
             descripcion: descripcion
         });
     },
+    //se actualiza un producto
     updateProducto: (state, { index, nombre, imagen, precio, marca, descripcion }) => {
         state.productos[index] = {
             name: nombre,

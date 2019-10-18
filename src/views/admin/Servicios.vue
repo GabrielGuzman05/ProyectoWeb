@@ -121,6 +121,7 @@ export default {
     this.$store.dispatch("getAllServices");
   },
   methods: {
+    //Se muestra el formulario de edición
     editItem(index) {
       this.idActualizar = index;
       this.nombreActualizar = this.servicios[index].name;
@@ -137,6 +138,7 @@ export default {
       this.servicios[index].descripcion = this.descripcionActualizar;
       this.servicios[index].precio = this.precioActualizar;
     },
+    //eliminamos el producto en la posición de index
     delItem(index) {
       this.servicios.splice(index, 1);
     }

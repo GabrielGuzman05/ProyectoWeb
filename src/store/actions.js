@@ -1,5 +1,6 @@
 import axios from 'axios'
 export default {
+    //llamadas a los datos
     getAllServices: (context) => {
         axios.get('/datos/servicios.json').then(response => {
                 let servicios = response.data
